@@ -9,7 +9,7 @@ Example usage:
 1. Trace execution of all code objects, do not resolve arguments
 $ python tracer.py factorial.pyc trace.txt
 
-1. Trace code objects having a name of `recur_factorial`, resolve arguments as well
+2. Trace code objects having a name of `recur_factorial`, resolve arguments as well
 $ python tracer.py -t=only -n=recur_factorial -r factorial.pyc trace.txt
 
 Visit http://0xec.blogspot.com/2017/03/hacking-cpython-virtual-machine-to.html
