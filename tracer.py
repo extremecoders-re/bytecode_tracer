@@ -89,7 +89,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('pycfile', help='The pyc file to trace.')
     parser.add_argument('tracefile', help='The file where to write the trace.')
-    parser.add_argument('-t', '--trace', choices=['all', 'only'], default='all', help='Trace all or only those codeobjects with the co_name.')
+    parser.add_argument('-t', '--trace', choices=['all', 'only'], default='all', help='Trace all or only those codeobjects with co_name specified by -name.')
     parser.add_argument('-n', '--name', help='co_name of the codeobject that will be traced.')
     parser.add_argument('-r', '--resolve', action='store_true', help='Resolve instruction operand values.')
     args = parser.parse_args()
