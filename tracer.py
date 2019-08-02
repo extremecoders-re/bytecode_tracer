@@ -53,7 +53,7 @@ def trace(frame, event, arg):
                         # Fetch the operand
                         operand = arg = ord(co_bytes[ins_offs+1]) | (ord(co_bytes[ins_offs+2]) << 8)
 
-                        # Resolve instriction arguments if specified
+                        # Resolve instruction arguments if specified
                         if options.resolve:
                             try:
                                 if opcode in dis.hasconst:
